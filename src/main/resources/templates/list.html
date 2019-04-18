@@ -11,10 +11,10 @@
 <div th:each="job : ${jobs}">
     <h4 th:inline="text">[[${job.title}]] @ [[${job.employer}]]</h4>
     <p th:text="${job.description}"></p>
-
     <div class="jumbotron">
         <p><a class="btn btn-secondary btn-lg" th:href="@{/update/{id}(id=${job.id})}" role="but-ton">update</a></p>
     </div>
+
 </div>
 
 
